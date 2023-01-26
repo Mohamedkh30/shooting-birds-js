@@ -1,0 +1,117 @@
+body{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    background-image: url("./imgs/background.jpg");
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+form {
+    display: flex;
+    background-color: rgba(0, 0, 170, 0.5);
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    height: 150px;
+    border-radius: 40% 70%;
+}
+h3{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px; ;
+    color: white;
+}
+
+#scoreingDiv{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 170, 0.5);
+    border-radius: 5%;    
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#scoreingDiv div{
+
+    width: fit-content;
+    background-color: rgba(0, 0, 170, 0.5);
+    border-radius:  20px;
+    width: 80%;
+    margin: 10px;
+}
+
+.bird{
+    display: inline-block;
+    width: 50px;
+    margin-right: 15px;
+}
+
+
+
+span{
+    bottom: 25px;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    color: white;
+}
+
+#name-textbox{
+    color: white;
+    width: 100px;
+    border-color: transparent;
+    background-color: darkblue;
+    border-radius: 10px ;
+}
+
+#submit-button{
+    color: white;
+    cursor: pointer;
+    width: 70px;
+    border-radius: 10px ;
+    border-color: transparent;
+    background-color: darkblue;
+}
+
+#submit-button:hover{
+    color: darkblue;
+    width: 70px;
+    border-radius: 10px ;
+    border-color: transparent;
+    background-color: white;
+}
+
+#submit-button:active{
+    transform: translate(0px,4px);
+    transition: transform 0.1s ;
+}
+
+#last-score-div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+.last-score-section{
+    background-color: darkblue;
+    box-sizing: border-box;
+    border-bottom: 3px blue solid;
+    border-right: 3px blue solid;
+    border-radius: 50% 80%;
+    padding: 10px;
+    margin-left: 10px;
+}
+.last-score-section span{
+    bottom: 0;
+    margin-left: 0;
+}
+

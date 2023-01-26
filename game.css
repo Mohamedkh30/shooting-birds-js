@@ -1,0 +1,91 @@
+body{
+    background-image: url("./imgs/background.jpg");
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.nav-section{
+    background-color: darkblue;
+    box-sizing: border-box;
+    border-bottom: 3px blue solid;
+    border-right: 3px blue solid;
+    border-radius: 50% 80%;
+    padding: 10px;
+}
+
+span{
+    color: white;
+    font-weight: 400;
+}
+
+#pop-up{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#pop-up > div{
+    width: fit-content;
+    height: 50vh;
+    background-color: rgba(173, 173, 255, 0.786);
+    border-radius: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#pop-up > div > img{
+    border-radius: 50px;
+    border: 5px solid darkblue;
+    width: 300px;
+    align-self: center;
+}
+#pop-up > div > span{
+    color: black;
+    font-family: sans-serif;
+    align-self: center;
+}
+
+#pop-up > div > button{
+    color: white;
+    cursor: pointer;
+    width: 70px;
+    border-radius: 10px ;
+    border-color: transparent;
+    background-color: darkblue;
+    align-self: center;
+}
+
+#pop-up > div > button:hover{
+    color: darkblue;
+    width: 70px;
+    border-radius: 10px ;
+    border-color: transparent;
+    background-color: white;
+}
+
+#pop-up > div > button:active{
+    transform: translate(0px,4px);
+    transition: transform 0.1s ;
+}

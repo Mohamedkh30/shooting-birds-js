@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+        <form action="./game.html" method="get">
+            <div>
+                <h3 >Enter your name</h3>
+                <input id="name-textbox" type="text" required placeholder="username" name="name">
+                <input id="submit-button" type="submit" value="GO!">
+            </div>
+        </form>
+
+        <div id="scoreingDiv">
+            
+                <h3>scoring</h3>
+            
+            <div>
+                <img class="bird" src="./imgs/bird1.gif" alt="">
+                <span>+5 points</span>
+            </div>
+            <div>
+                <img class="bird" src="./imgs/bird2.gif" alt="">
+                <span>+10 points</span>
+            </div>
+            <div>
+                <img class="bird" src="./imgs/bird3.gif" alt="">
+                <span>-10 points</span>
+            </div>
+        </div>
+
+        <div id="last-score-div">
+            <div class="last-score-section">
+                <span>Name:</span>
+                <span id="last-score-name-section"></span>
+            </div>
+            <div class="last-score-section">
+                <span>score:</span>
+                <span id="last-score-score-section">0</span>
+            </div>
+            <div class="last-score-section">
+                <span>count:</span>
+                <span id="last-score-count-section">0</span>
+            </div>
+        </div>
+
+        
+
+
+    <script src="index.js"></script>
+</body>
+</html>
